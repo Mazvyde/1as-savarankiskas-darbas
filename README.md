@@ -10,16 +10,16 @@ Realizuoti reikalavimai versijai (v0.1):
 2.	duomenų talpinimui sukurta klasėje ir kartu su metodais skirtais tokių duomenų apdorojimui;
 3.	realizuota "trejų metodų" taisyklė: 
   o	klasės duomenys:
-  	studento vardas ir pavardė;
-  	namų darbų ir egzamino rezultatas;
-  	galutinis pažymys.
+  	-studento vardas ir pavardė;
+  	-namų darbų ir egzamino rezultatas;
+  	-galutinis pažymys.
   o	klasės metodai: 
-  	Konstruktorius Studentas() {}; 
-  	Priskyrimo-kopijavimo operatorius Studentas &operator=(const Studentas &studentas)
-  	Kopijavimo konstruktorius Studentas(const Studentas &studentas); 
-  	Destruktorius ~Studentas() {} 
-  	Duomenų įvedimo metodas cin
-  	Duomenų išvedimo metodas cout
+  	-Konstruktorius Studentas() {}; 
+  	-Priskyrimo-kopijavimo operatorius Studentas &operator=(const Studentas &studentas)
+  	-Kopijavimo konstruktorius Studentas(const Studentas &studentas); 
+  	-Destruktorius ~Studentas() {} 
+  	-Duomenų įvedimo metodas cin
+  	-Duomenų išvedimo metodas cout
 	Galutinio pažymio skaičiavimo metodas pasirinktinai pagal medianą arbą vidurkį
 4.	Baigus duomenų įvedimą, suskaičiuoja galutį balą ir juos pateikia į ekraną.
 5.	Programa veikia kai namų darbų skaičius (n) yra žinomas iš anksto, t.y. tik įvedimo metu vartotojas nurodo, kiek namų darbų bus įvesta.
