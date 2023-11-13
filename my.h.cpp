@@ -55,7 +55,6 @@ public:
     // vector konteineris namu darbu pažymiams 
     vector <int> nd(n);
 
-    // namu darbu pažymiams 
     for (int i = 0; i < n; i++) {
       cout << "nd[" << i + 1 << "]: ";
       cin >> nd[i];
