@@ -70,7 +70,7 @@ public:
 
     // priklausomai nuo galutinio pažymio skaičiavimo metodo apskaičiuojamas galutinis pažymys
     if (metodas_ == 1) {
-      galutinis_ = (nd[0] + nd[1] + nd[2] + egz_) / (n+1);
+      galutinis_ = (0.4 * ((nd[0] + nd[1] + nd[2]) / n ) + (0.6 * egz_));
     } else if (metodas_ == 2) {
       sort(nd.begin(), nd.end());
       galutinis_ = (nd[n / 2] + egz_) / 2 ;
