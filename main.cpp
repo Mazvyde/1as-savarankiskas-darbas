@@ -44,27 +44,26 @@ public:
     cin >> vardas_;
     cout << "Įveskite studento pavardę: ";
     cin >> pavarde_;
-    cout << "Įveskite namų darbų rezultatus (10-balėje sistemoje): ";
-
+    
     // deklaruojame kintamajį `n` ir jo reikšmę įvedame iš vartotojo
     int n;
     cout << "Kiek namų darbų rezultatų norite įvesti? ";
     cin >> n;
 
-    // sukuriame naują `std::vector` objektą, kurio elementų tipas yra `int`
-    vector<int> nd(n);
+    // vector konteineris namu darbu pažymiams 
+    vector <int> nd(n);
 
-    // įvedame namų darbų rezultatus į `nd_` masyvą
+    // masyvas namu darbu pažymiams 
     for (int i = 0; i < n; i++) {
       cout << "nd[" << i + 1 << "]: ";
       cin >> nd[i];
     }
 
-    // įvedame egzamino pažymį
+    // egzaminimo pažymio įvedimas 
     cout << "Įveskite egzamino pažymį (10-balėje sistemoje): ";
     cin >> egz_;
 
-    // įvedame galutinio pažymio skaičiavimo metodą
+    // 
     cout << "Pasirinkite galutinio pažymio skaičiavimo metodą:\n1. Pagal vidurkį\n2. Pagal medianą\n";
     cin >> metodas_;
 
@@ -86,6 +85,12 @@ public:
     cout << "Egzamino pažymys: " << egz_ << endl;
     cout << "Galutinio pažymio skaičiavimo metodas: " << (metodas_ == 1 ? "Vidurkis" : "Mediana") << endl;
   }
+  // Išvedame duomenis į ekraną
+ void isvedimas2() {
+    cout << left << setw(15) << "Pavardė" << setw(15) << "Vardas" << fixed << setprecision(2) << setw(10) << "Galutinis (Vid.)" << setw(10) << "Galutinis (Med.)" << endl;
+    cout << left << setw(15) << pavarde_ << setw(15) << vardas_ << fixed << setprecision(2) << setw(10) << galutinis_ << " (";
+    cout << (metodas_ == 1 ? "Vid." : "Med") << ")" << endl;
+ }
 
 private:
   string vardas_;
@@ -106,7 +111,10 @@ int main() {
 
   // Išvedame duomenis
   studentas.isvedimas();
+  
+  // Išvedame duomenis2
+  studentas.isvedimas2();
+
 
   return 0;
 }
-
