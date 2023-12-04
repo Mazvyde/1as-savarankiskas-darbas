@@ -23,7 +23,8 @@ Programoje realizuoti reikalavimai versijai (v0.1):
 5. Baigus duomenų įvedimą, programam suskaičiuoja galutį balą ir juos pateikia į ekraną. Programa veikia kai namų darbų skaičius (n) yra žinomas iš anksto, t.y. įvedimo metu vartotojas nurodo, kiek namų darbų bus įvesta.
 7.	Namų darbų rezultatai saugomi į vector tipo konteineryje.
 8.	Programoje veikia galimybė mokinio gautuosius balus už namų darbus ir egzaminą generuoti atsitiktinai.
-9. Programa turi galimybę nuksiatyti duomenis iš failo kursiokai.txt,
+9. Programa turi galimybę nuskiatyti duomenis iš failo kursiokai.txt.
+10. Programa generuoja penkis atsitiktinius studentų sąrašų failus, sudarytus iš: 1 000, 10 000, 100 000, 1 000 000, 10 000 000 įrašų (Vardas2 Pavarde2, Vardas3 Pavarde3). 
 
 
 
