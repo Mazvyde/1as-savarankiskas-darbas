@@ -16,12 +16,12 @@ o	klasės metodai:
 •	Konstruktorius Studentas() {}; 
 •	Priskyrimo-kopijavimo operatorius Studentas &operator=(const Studentas &studentas)
 •	Kopijavimo konstruktorius Studentas(const Studentas &studentas); 
-•	Destruktorius ~Studentas() {} 
-•	Duomenų įvedimo metodas cin
-•	Duomenų išvedimo metodas cou
+•	Destruktorius ~Studentas() {};
+•	Duomenų įvedimo metodas cin;
+•	Duomenų išvedimo metodas cout;
 •	Galutinio pažymio skaičiavimo metodas pasirinktinai pagal medianą arbą vidurkį
 4.	Baigus duomenų įvedimą, suskaičiuoja galutį balą ir juos pateikia į ekraną.
-5.	Programa veikia kai namų darbų skaičius (n) yra žinomas iš anksto, t.y. tik įvedimo metu vartotojas nurodo, kiek namų darbų bus įvesta.
+5.	Programa veikia kai namų darbų skaičius (n) yra žinomas iš anksto, t.y. įvedimo metu vartotojas nurodo, kiek namų darbų bus įvesta.
 6.	Namų darbų rezultatai saugomi į vector tipo konteinerį.  
 
 
