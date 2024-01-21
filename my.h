@@ -53,6 +53,8 @@ public:
   // Destruktorius
   ~Studentas() {}
 
+  // move contruktorius ir move prieskyros operatorius. 
+
   // Duomenų įvedimas iš klaviatūros
   void ivedimas() {
     cout << "Įveskite studento vardą: ";
@@ -149,6 +151,12 @@ public:
   double getGalutinis() const { return galutinis_; }
   
   int getMetodas() const { return metodas_; }
+  
+  friend bool operator< (const Studentas &a, const Studentas &b)
+  {
+    return a.getGalutinis() < b.getGalutinis(); 
+  } 
+
 
 private:
   string vardas_;
@@ -159,6 +167,15 @@ private:
   int metodas_;
 };
 
+bool vardasmaz (const Studentas &a, const Studentas &b)
+  {
+    return a.getVardas() < b.getVardas(); 
+  } 
+
+bool pavardmaz (const Studentas &a, const Studentas &b)
+  {
+    return a.getPavarde() < b.getPavarde(); 
+  } 
 
 vector<Studentas> nuskaityti_is_failo(string kursiokai) {
   ifstream fd(kursiokai);
@@ -256,6 +273,9 @@ void generuotiFailus() {
 }
 
 void skaiciuotiIrIsvestiGalutinius(const vector<Studentas>& studentai) {
+    sort (studentai.begin(), studentai.end()); 
+    sort (studentai.begin(), studentai.end(), pavardmaz);  
+
     cout << "Studentai ir jų galutiniai pažymiai:" << endl;
     cout << left << setw(15) << "Pavardė" << setw(15) << "Vardas" << fixed
          << setprecision(2) << setw(10) << "Galutinis (Vid.)" << setw(10)
@@ -265,6 +285,8 @@ void skaiciuotiIrIsvestiGalutinius(const vector<Studentas>& studentai) {
         cout << left << setw(15) << studentas.getPavarde() << setw(15) << studentas.getVardas() << fixed<< setprecision(2) << setw(10) << studentas.getGalutinis() << "("
         << (studentas.getMetodas() == 1 ? "Vid." : "Med") << ")" << endl;
     }
+
+    
 }
 
 #endif
