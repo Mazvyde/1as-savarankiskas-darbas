@@ -2,7 +2,6 @@
 #include <iomanip>
 #include <iostream>
 #include <vector>
-#include <iostream>
 #include <fstream>
 
 
@@ -31,11 +30,11 @@ int main() {
             studentai.push_back(naujasStudentas);
         }
     } else if (pasirinkimas == 2) {
-        // kai pasirinko nuskaityti duomenis iš failo kursiokai
+        // kai pasirinko nuskaityti duomenis iš failo 
         studentai = nuskaityti_is_failo("kursiokai.txt"); 
         studentai = nuskaityti_is_failo("failas_1000.txt");
         isvesti_nuskaitytus_duomenis(studentai);
-        // skaiciuotiIrIsvestiGalutinius(studentai);
+        skaiciuotiIrIsvestiGalutinius(studentai);
     } else {
         cout << "Netinkamas pasirinkimas\n";
         return 1; // Baigiame programos darbą, nes pasirinkimas nebuvo tinkamas
