@@ -1,0 +1,4 @@
+vardas   pavardė     nd1  nd2   nd3  nd4  nd5  egzaminas
+Jonas    Jonaitis    8    9     10   6    10   9
+Petras   Petraitis   7    10    8    5    4    6
+Vardas   Vardenis    8    6     8    5    4    9
